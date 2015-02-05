@@ -1,0 +1,13 @@
+{
+  "name": "component-make",
+  "description": "Assembling tools to build ya-islands-component",
+  "dependencies": {
+    "q": "1.1.x",
+    "pretty-log": "0.1.0",
+    "stylus": "0.50.x",
+    "stylobate": "0.24.x",
+    "stylobate-islands": "0.27.x",
+    "vulcanize": "0.7.8",
+    "coa": "0.4.1"
+  }
+}
