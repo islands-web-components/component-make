@@ -48,6 +48,7 @@ cmd.do(process.argv.slice(2)).then(function(args) {
             return;
           }
           vulcan.processDocument();
+          log.success('Done!');
         });
       },
       logError
