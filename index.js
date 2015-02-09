@@ -47,7 +47,11 @@ cmd.do(process.argv.slice(2)).then(function(args) {
             logError(err);
             return;
           }
-          vulcan.processDocument();
+          try {
+            vulcan.processDocument();
+          } catch(e) {
+            logError(e);
+          }
           log.success('Done!');
         });
       },
