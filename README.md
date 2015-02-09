@@ -8,8 +8,8 @@ This is a tool for building an island component from [islands web components set
 
 ## Usage
 
-```
-$> node index.js -b my-block
+```console
+$ node index.js -b my-block
 ```
 
 * `-b` (`--block`) — styl and html files should be called the same name which is block's name
