@@ -3,6 +3,8 @@ var log = require('pretty-log');
 
 var CssMake = require("./lib/css-builder");
 var vulcan = require("vulcanize/lib/vulcan");
+var postcss = require("postcss")
+var postcssHost = require("postcss-host")
 
 var Q = require('q');
 
@@ -22,7 +24,12 @@ cmd.do(process.argv.slice(2)).then(function(args) {
   cssMaker.run()
     .then(
       function(res) {
-        return writeCssFile(res.name, res.css);
+        var css = postcss()
+          .use(postcssHost())
+          .process(res.css)
+          .css;
+
+        return writeCssFile(res.name, css);
       }, 
       logError
     )
