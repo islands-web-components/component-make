@@ -8,6 +8,8 @@
     "stylobate": "0.24.x",
     "stylobate-islands": "0.27.x",
     "vulcanize": "0.7.8",
-    "coa": "0.4.1"
+    "coa": "0.4.1",
+    "postcss": "4.0.x",
+    "postcss-host": "1.0.4"
   }
 }
